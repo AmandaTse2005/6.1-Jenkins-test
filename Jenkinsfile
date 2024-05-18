@@ -33,7 +33,7 @@ pipeline{
                     emailext (
                         to: "amandatse2005@gmail.com",
                         subject: "Unit and Integration Tests Status Email",
-                        body: "Log attached!"
+                        body: "Log attached!",
                         attachLog: true
                     )
                 }
