@@ -17,26 +17,24 @@ pipeline{
             post{
                 success{
                     emailext(
-                        attachLog: true,
-                        body: "The unit and integration tests stage was successful!",
+                        to: "amandatse2005@gmail.com",
                         subject: "Unit and Integration Tests Status Email",
-                        to: "amandatse2005@gmail.com"
+                        body: "The unit and integration tests stage was successful!"
                     )
                 }
                 failure{
                     emailext(
-                        attachLog: true,
-                        body: "The unit and integration tests stage was failed!",
+                        to: "amandatse2005@gmail.com",
                         subject: "Unit and Integration Tests Status Email",
-                        to: "amandatse2005@gmail.com"
+                        body: "The unit and integration tests stage was failed!"
                     )
                 }
                 always {
                     emailext (
-                        attachLog: true,
-                        body: "Log attached!",
+                        to: "amandatse2005@gmail.com",
                         subject: "Unit and Integration Tests Status Email",
-                        to: "amandatse2005@gmail.com"
+                        body: "Log attached!"
+                        attachLog: true,
                     )
                 }
             }
@@ -55,26 +53,24 @@ pipeline{
             post{
                 success{
                     emailext(
-                        attachLog: true,
-                        body: "The security scan stage was successful!",
-                        subject: "Security Scan Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Security Scan Status Email",
+                        body: "The security scan stage was successful!",
                     )
                 }
                 failure{
                     emailext(
-                        attachLog: true,
-                        body: "The security scan stage was failed!",
-                        subject: "Security Scan Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Security Scan Status Email",
+                        body: "The security scan stage was failed!",
                     )
                 }
                 always {
                     emailext (
-                        attachLog: true,
-                        body: "Log attached!",
-                        subject: "Security Scan Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Security Scan Status Email",
+                        body: "Log attached!",
+                        attachLog: true,
                     )
                 }
             }
@@ -93,26 +89,24 @@ pipeline{
             post{
                 success{
                     emailext(
-                        attachLog: true,
-                        body: "The integration tests on staging stage was successful!",
-                        subject: "Integration Tests on Staging Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Integration Tests on Staging Status Email",
+                        body: "The integration tests on staging stage was successful!",
                     )
                 }
                 failure{
                     emailext(
-                        attachLog: true,
-                        body: "The integration tests on staging stage was failed!",
-                        subject: "Integration Tests on Staging Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Integration Tests on Staging Status Email",
+                        body: "The integration tests on staging stage was failed!",
                     )
                 }
                 always {
                     emailext (
-                        attachLog: true,
-                        body: "Log attached!",
-                        subject: "Integration Tests on Staging Status Email",
                         to: "amandatse2005@gmail.com"
+                        subject: "Integration Tests on Staging Status Email",
+                        body: "Log attached!",
+                        attachLog: true,
                     )
                 }
             }
