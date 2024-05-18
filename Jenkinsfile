@@ -34,7 +34,7 @@ pipeline{
                         to: "amandatse2005@gmail.com",
                         subject: "Unit and Integration Tests Status Email",
                         body: "Log attached!"
-                        attachLog: true,
+                        attachLog: true
                     )
                 }
             }
@@ -70,7 +70,7 @@ pipeline{
                         to: "amandatse2005@gmail.com"
                         subject: "Security Scan Status Email",
                         body: "Log attached!",
-                        attachLog: true,
+                        attachLog: true
                     )
                 }
             }
@@ -106,7 +106,7 @@ pipeline{
                         to: "amandatse2005@gmail.com"
                         subject: "Integration Tests on Staging Status Email",
                         body: "Log attached!",
-                        attachLog: true,
+                        attachLog: true
                     )
                 }
             }
